@@ -44,7 +44,7 @@ echo "FRAMEWORK_SEARCH_PATHS = \$(inherited) ${SRCROOT}/Carthage/Build/iOS/" >> 
 
 export XCODE_XCCONFIG_FILE="$xcconfig"
 
-$CARTHAGE build --platform iOS --cache-builds --no-use-binaries --configuration "$2"
+$CARTHAGE build --platform iOS --no-skip-current --cache-builds --no-use-binaries --configuration "$2"
 
 STATIC_FRAMEWORK_PATH="Carthage/Build/iOS/STATIC"
 if [ -d $STATIC_FRAMEWORK_PATH ]
