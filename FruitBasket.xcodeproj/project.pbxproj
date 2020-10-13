@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,15 @@
 		2224AFD0253586A8005BECB4 /* setup_carthage.sh in Resources */ = {isa = PBXBuildFile; fileRef = 2224AFCF253586A8005BECB4 /* setup_carthage.sh */; };
 		2224AFD925358BF4005BECB4 /* SwiftDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2224AFD825358BF4005BECB4 /* SwiftDate.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		2224AFE225358CBE005BECB4 /* release.sh in Resources */ = {isa = PBXBuildFile; fileRef = 2224AFE125358CBE005BECB4 /* release.sh */; };
+		2224B02E2535A5B2005BECB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2224B02D2535A5B2005BECB4 /* AppDelegate.swift */; };
+		2224B0302535A5B2005BECB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2224B02F2535A5B2005BECB4 /* SceneDelegate.swift */; };
+		2224B0322535A5B2005BECB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2224B0312535A5B2005BECB4 /* ViewController.swift */; };
+		2224B0352535A5B2005BECB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2224B0332535A5B2005BECB4 /* Main.storyboard */; };
+		2224B0372535A5B5005BECB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2224B0362535A5B5005BECB4 /* Assets.xcassets */; };
+		2224B03A2535A5B5005BECB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2224B0382535A5B5005BECB4 /* LaunchScreen.storyboard */; };
+		2224B0482535A8B5005BECB4 /* input.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 2224B0472535A8B5005BECB4 /* input.xcfilelist */; };
+		2224B0502535A8BD005BECB4 /* output.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 2224B04F2535A8BD005BECB4 /* output.xcfilelist */; };
+		2224B0552535A938005BECB4 /* FruitBasket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2224B0542535A938005BECB4 /* FruitBasket.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +48,17 @@
 		2224AFCF253586A8005BECB4 /* setup_carthage.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = setup_carthage.sh; sourceTree = "<group>"; };
 		2224AFD825358BF4005BECB4 /* SwiftDate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftDate.framework; path = Carthage/Build/iOS/SwiftDate.framework; sourceTree = "<group>"; };
 		2224AFE125358CBE005BECB4 /* release.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = release.sh; sourceTree = "<group>"; };
+		2224B02B2535A5B2005BECB4 /* FruitBasketExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitBasketExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2224B02D2535A5B2005BECB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2224B02F2535A5B2005BECB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2224B0312535A5B2005BECB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2224B0342535A5B2005BECB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2224B0362535A5B5005BECB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2224B0392535A5B5005BECB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2224B03B2535A5B5005BECB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2224B0472535A8B5005BECB4 /* input.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = input.xcfilelist; sourceTree = "<group>"; };
+		2224B04F2535A8BD005BECB4 /* output.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = output.xcfilelist; sourceTree = "<group>"; };
+		2224B0542535A938005BECB4 /* FruitBasket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FruitBasket.framework; path = Carthage/Build/iOS/FruitBasket.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +78,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2224B0282535A5B2005BECB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2224B0552535A938005BECB4 /* FruitBasket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -67,6 +95,7 @@
 				2224AFCE25358683005BECB4 /* bin */,
 				2224AF9C253583BA005BECB4 /* FruitBasket */,
 				2224AFA7253583BA005BECB4 /* FruitBasketTests */,
+				2224B02C2535A5B2005BECB4 /* FruitBasketExample */,
 				2224AF9B253583BA005BECB4 /* Products */,
 				2224AFD725358BF4005BECB4 /* Frameworks */,
 			);
@@ -77,6 +106,7 @@
 			children = (
 				2224AF9A253583BA005BECB4 /* FruitBasket.framework */,
 				2224AFA3253583BA005BECB4 /* FruitBasketTests.xctest */,
+				2224B02B2535A5B2005BECB4 /* FruitBasketExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,9 +143,34 @@
 		2224AFD725358BF4005BECB4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2224B0542535A938005BECB4 /* FruitBasket.framework */,
 				2224AFD825358BF4005BECB4 /* SwiftDate.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2224B02C2535A5B2005BECB4 /* FruitBasketExample */ = {
+			isa = PBXGroup;
+			children = (
+				2224B0462535A883005BECB4 /* Resource */,
+				2224B02D2535A5B2005BECB4 /* AppDelegate.swift */,
+				2224B02F2535A5B2005BECB4 /* SceneDelegate.swift */,
+				2224B0312535A5B2005BECB4 /* ViewController.swift */,
+				2224B0332535A5B2005BECB4 /* Main.storyboard */,
+				2224B0362535A5B5005BECB4 /* Assets.xcassets */,
+				2224B0382535A5B5005BECB4 /* LaunchScreen.storyboard */,
+				2224B03B2535A5B5005BECB4 /* Info.plist */,
+			);
+			path = FruitBasketExample;
+			sourceTree = "<group>";
+		};
+		2224B0462535A883005BECB4 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				2224B0472535A8B5005BECB4 /* input.xcfilelist */,
+				2224B04F2535A8BD005BECB4 /* output.xcfilelist */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +223,24 @@
 			productReference = 2224AFA3253583BA005BECB4 /* FruitBasketTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		2224B02A2535A5B2005BECB4 /* FruitBasketExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2224B03C2535A5B5005BECB4 /* Build configuration list for PBXNativeTarget "FruitBasketExample" */;
+			buildPhases = (
+				2224B0272535A5B2005BECB4 /* Sources */,
+				2224B0282535A5B2005BECB4 /* Frameworks */,
+				2224B0292535A5B2005BECB4 /* Resources */,
+				2224B0452535A866005BECB4 /* carthage build framework */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FruitBasketExample;
+			productName = FruitBasketExample;
+			productReference = 2224B02B2535A5B2005BECB4 /* FruitBasketExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -182,6 +255,9 @@
 						LastSwiftMigration = 1200;
 					};
 					2224AFA2253583BA005BECB4 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					2224B02A2535A5B2005BECB4 = {
 						CreatedOnToolsVersion = 12.0.1;
 					};
 				};
@@ -201,6 +277,7 @@
 			targets = (
 				2224AF99253583BA005BECB4 /* FruitBasket */,
 				2224AFA2253583BA005BECB4 /* FruitBasketTests */,
+				2224B02A2535A5B2005BECB4 /* FruitBasketExample */,
 			);
 		};
 /* End PBXProject section */
@@ -222,7 +299,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2224B0292535A5B2005BECB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2224B03A2535A5B5005BECB4 /* LaunchScreen.storyboard in Resources */,
+				2224B0502535A8BD005BECB4 /* output.xcfilelist in Resources */,
+				2224B0482535A8B5005BECB4 /* input.xcfilelist in Resources */,
+				2224B0372535A5B5005BECB4 /* Assets.xcassets in Resources */,
+				2224B0352535A5B2005BECB4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2224B0452535A866005BECB4 /* carthage build framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"$(SRCROOT)/FruitBasketExample/Resource/input.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "carthage build framework";
+			outputFileListPaths = (
+				"$(SRCROOT)/FruitBasketExample/Resource/output.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2224AF96253583BA005BECB4 /* Sources */ = {
@@ -242,6 +354,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2224B0272535A5B2005BECB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2224B0322535A5B2005BECB4 /* ViewController.swift in Sources */,
+				2224B02E2535A5B2005BECB4 /* AppDelegate.swift in Sources */,
+				2224B0302535A5B2005BECB4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -251,6 +373,25 @@
 			targetProxy = 2224AFA5253583BA005BECB4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2224B0332535A5B2005BECB4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2224B0342535A5B2005BECB4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2224B0382535A5B5005BECB4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2224B0392535A5B5005BECB4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2224AFAC253583BA005BECB4 /* Debug */ = {
@@ -387,8 +528,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"${inherited}",
-					"@execuable_path/Frameworks",
-					"@loader_path/Frameworks",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = FruitBasket/Info.plist;
@@ -420,8 +559,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"${inherited}",
-					"@execuable_path/Frameworks",
-					"@loader_path/Frameworks",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = FruitBasket/Info.plist;
@@ -478,6 +615,54 @@
 			};
 			name = Release;
 		};
+		2224B03D2535A5B5005BECB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7278UMRMRU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = FruitBasketExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.baon.fruit-basket.FruitBasketExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2224B03E2535A5B5005BECB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7278UMRMRU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = FruitBasketExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.baon.fruit-basket.FruitBasketExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -504,6 +689,15 @@
 			buildConfigurations = (
 				2224AFB2253583BA005BECB4 /* Debug */,
 				2224AFB3253583BA005BECB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2224B03C2535A5B5005BECB4 /* Build configuration list for PBXNativeTarget "FruitBasketExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2224B03D2535A5B5005BECB4 /* Debug */,
+				2224B03E2535A5B5005BECB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
