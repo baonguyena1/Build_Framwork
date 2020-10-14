@@ -14,7 +14,7 @@ echo -e "${RED}###${NC} Current directory ${SRCROOT}."
 CONFIG="config.xcconfig"
 
 function checkoutSource {
-    echo -e "${RED}###{NC} Checkout source code from git branch."
+    echo -e "${RED}###${NC} Checkout source code from git branch."
     cd $SRCROOT
     git reset --hard
     git checkout $BRANCH
@@ -40,6 +40,10 @@ function releaseCarthage {
     git push origin $BRANCH --tags
 }
 
+function releaseCocoapods {
+
+}
+
 checkoutSource
 
 getConfig
@@ -47,3 +51,5 @@ getConfig
 buildDependencies
 
 releaseCarthage
+
+releaseCocoapods
