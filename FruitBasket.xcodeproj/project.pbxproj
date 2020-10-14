@@ -25,6 +25,7 @@
 		2224B0502535A8BD005BECB4 /* output.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 2224B04F2535A8BD005BECB4 /* output.xcfilelist */; };
 		2224B0812536AAB5005BECB4 /* FruitBasket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2224AF9A253583BA005BECB4 /* FruitBasket.framework */; };
 		2224B0822536AAB5005BECB4 /* FruitBasket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2224AF9A253583BA005BECB4 /* FruitBasket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2224B0872536D20D005BECB4 /* config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2224B0862536D20D005BECB4 /* config.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		2224B0472535A8B5005BECB4 /* input.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = input.xcfilelist; sourceTree = "<group>"; };
 		2224B04F2535A8BD005BECB4 /* output.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = output.xcfilelist; sourceTree = "<group>"; };
 		2224B0542535A938005BECB4 /* FruitBasket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FruitBasket.framework; path = Carthage/Build/iOS/FruitBasket.framework; sourceTree = "<group>"; };
+		2224B0862536D20D005BECB4 /* config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			children = (
 				2224AFCF253586A8005BECB4 /* setup_carthage.sh */,
 				2224AFE125358CBE005BECB4 /* release.sh */,
+				2224B0862536D20D005BECB4 /* config.xcconfig */,
 			);
 			path = bin;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 			files = (
 				2224B03A2535A5B5005BECB4 /* LaunchScreen.storyboard in Resources */,
 				2224B0502535A8BD005BECB4 /* output.xcfilelist in Resources */,
+				2224B0872536D20D005BECB4 /* config.xcconfig in Resources */,
 				2224B0482535A8B5005BECB4 /* input.xcfilelist in Resources */,
 				2224B0372535A5B5005BECB4 /* Assets.xcassets in Resources */,
 				2224B0352535A5B2005BECB4 /* Main.storyboard in Resources */,
