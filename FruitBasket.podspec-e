@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name = "FruitBasket"
-    spec.version = "1.0.4"
+    spec.version = "1.0.1"
     spec.summary = "Sample framework FruitBasket."
     spec.homepage = "https://github.com/baonguyena1/Build_Framwork"
     spec.license = { type: 'MIT', file: 'LICENSE' }
