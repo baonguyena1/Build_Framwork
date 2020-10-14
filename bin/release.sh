@@ -12,7 +12,14 @@ SRCROOT=`pwd`
 echo -e "${RED}###${NC} Current directory ${SRCROOT}."
 CONFIG="config.xcconfig"
 
-function build_dependencies {
+function checkoutSource {
+    cd $SRCROOT
+    git reset --hard
+    git checkout main
+    git fetch; git pull
+}
+
+function buildDependencies {
     echo -e "${RED}###${NC} Build dependencies."
     cd $SRCROOT
     $SRCROOT/bin/setup_carthage.sh beta Release
@@ -29,8 +36,10 @@ function release {
     BUILD_CONFIGURATION="Release"
 }
 
+checkoutSource
+
 getConfig
 
-build_dependencies
+buildDependencies
 
 release
