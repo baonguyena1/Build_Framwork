@@ -35,21 +35,15 @@ function getConfig {
     echo -e "${RED}###${NC} Build version: ${VERSION}"
 }
 
-function releaseCarthage {
-    echo -e "${RED}###${NC} Release Carthage."
+function releaseCarthageCocoapods {
+    echo -e "${RED}###${NC} Release Carthage, Cocoapods."
     git reset --hard
+    
     git tag "v${VERSION}"
-    git push origin $BRANCH --tags
-}
-
-function releaseCocoapods {
-    echo -e "${RED}###${NC} Release Cocoapods."
-    git reset --hard
     #Update version for FruitBasket.podspec
-    TARGET_KEY="spec.version"
-    sed -e -i "s/\($TARGET_KEY *= *\).*/\1$VERSION/" $PODSPEC
-    git add $PODSPEC
-    git push origin $BRANCH
+    sed -i -e "s/spec.version = .*/spec.version = \"$VERSION\"/" $PODSPEC
+    git commit -m "RELEASE: ${VERSION}."
+    git push origin $BRANCH --tags
 }
 
 checkoutSource
@@ -58,6 +52,4 @@ getConfig
 
 buildDependencies
 
-releaseCarthage
-
-releaseCocoapods
+releaseCarthageCocoapods
