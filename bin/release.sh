@@ -47,7 +47,7 @@ function releaseCocoapods {
     git reset --hard
     #Update version for FruitBasket.podspec
     TARGET_KEY="spec.version"
-    sed -c -i "s/\($TARGET_KEY *= *\).*/\1$VERSION/" $PODSPEC
+    sed -e -i "s/\($TARGET_KEY *= *\).*/\1$VERSION/" $PODSPEC
     git add $PODSPEC
     git push origin $BRANCH
 }
