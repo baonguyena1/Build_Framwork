@@ -12,6 +12,7 @@ cd $SRCROOT
 SRCROOT=`pwd`
 echo -e "${RED}###${NC} Current directory ${SRCROOT}."
 CONFIG="config.xcconfig"
+PODSPEC="FruitBasket.podspec"
 
 function checkoutSource {
     echo -e "${RED}###${NC} Checkout source code from git branch."
@@ -35,13 +36,20 @@ function getConfig {
 }
 
 function releaseCarthage {
+    echo -e "${RED}###${NC} Release Carthage."
     git reset --hard
     git tag "v${VERSION}"
     git push origin $BRANCH --tags
 }
 
 function releaseCocoapods {
-
+    echo -e "${RED}###${NC} Release Cocoapods."
+    git reset --hard
+    #Update version for FruitBasket.podspec
+    TARGET_KEY="spec.version"
+    sed -c -i "s/\($TARGET_KEY *= *\).*/\1$VERSION/" $PODSPEC
+    git add $PODSPEC
+    git push origin $BRANCH
 }
 
 checkoutSource
