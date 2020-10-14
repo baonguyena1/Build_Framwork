@@ -1,0 +1,14 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '11.0'
+
+# source 'https://github.com/baonguyena1/Build_Framwork.git'
+# source 'https://cdn.cocoapods.org/'
+
+target 'FruitBasketCocoapodsExample' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for FruitBasketCocoapodsExample
+  pod 'FruitBasket', '~> 1.0'
+
+end
