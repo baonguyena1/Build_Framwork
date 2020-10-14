@@ -38,10 +38,11 @@ function getConfig {
 function releaseCarthageCocoapods {
     echo -e "${RED}###${NC} Release Carthage, Cocoapods."
     git reset --hard
-    
+
     git tag "v${VERSION}"
     #Update version for FruitBasket.podspec
     sed -i -e "s/spec.version = .*/spec.version = \"$VERSION\"/" $PODSPEC
+    git add .
     git commit -m "RELEASE: ${VERSION}."
     git push origin $BRANCH --tags
 }
