@@ -13,7 +13,7 @@ echo -e "${RED}###${NC} Current directory ${SRCROOT}."
 function build_dependencies {
     echo -e "${RED}###${NC} Build dependencies."
     cd $SRCROOT
-    bin/setup_carthage.sh beta Release
+    bin/setup_carthage.sh beta
 }
 
 function release {

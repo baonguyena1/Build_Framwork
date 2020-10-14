@@ -23,7 +23,8 @@
 		2224B03A2535A5B5005BECB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2224B0382535A5B5005BECB4 /* LaunchScreen.storyboard */; };
 		2224B0482535A8B5005BECB4 /* input.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 2224B0472535A8B5005BECB4 /* input.xcfilelist */; };
 		2224B0502535A8BD005BECB4 /* output.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 2224B04F2535A8BD005BECB4 /* output.xcfilelist */; };
-		2224B0552535A938005BECB4 /* FruitBasket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2224B0542535A938005BECB4 /* FruitBasket.framework */; };
+		2224B0812536AAB5005BECB4 /* FruitBasket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2224AF9A253583BA005BECB4 /* FruitBasket.framework */; };
+		2224B0822536AAB5005BECB4 /* FruitBasket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2224AF9A253583BA005BECB4 /* FruitBasket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +35,28 @@
 			remoteGlobalIDString = 2224AF99253583BA005BECB4;
 			remoteInfo = FruitBasket;
 		};
+		2224B072253699A3005BECB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2224AF91253583BA005BECB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2224AF99253583BA005BECB4;
+			remoteInfo = FruitBasket;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2224B0832536AAB5005BECB4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2224B0822536AAB5005BECB4 /* FruitBasket.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2224AF9A253583BA005BECB4 /* FruitBasket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FruitBasket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,7 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2224B0552535A938005BECB4 /* FruitBasket.framework in Frameworks */,
+				2224B0812536AAB5005BECB4 /* FruitBasket.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,10 +253,12 @@
 				2224B0282535A5B2005BECB4 /* Frameworks */,
 				2224B0292535A5B2005BECB4 /* Resources */,
 				2224B0452535A866005BECB4 /* carthage build framework */,
+				2224B0832536AAB5005BECB4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2224B073253699A3005BECB4 /* PBXTargetDependency */,
 			);
 			name = FruitBasketExample;
 			productName = FruitBasketExample;
@@ -371,6 +395,11 @@
 			isa = PBXTargetDependency;
 			target = 2224AF99253583BA005BECB4 /* FruitBasket */;
 			targetProxy = 2224AFA5253583BA005BECB4 /* PBXContainerItemProxy */;
+		};
+		2224B073253699A3005BECB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2224AF99253583BA005BECB4 /* FruitBasket */;
+			targetProxy = 2224B072253699A3005BECB4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -537,7 +566,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
-					"${BUILT_PRODUCTS_DIR}/SwiftDate",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.baon.fruit-basket.FruitBasket";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -569,7 +597,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
-					"${BUILT_PRODUCTS_DIR}/SwiftDate",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.baon.fruit-basket.FruitBasket";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
