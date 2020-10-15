@@ -1,0 +1,2 @@
+$(SRCROOT)/Carthage/Build/iOS/SwiftDate.framework
+$(SRCROOT)/Carthage/Build/iOS/FruitBasket.framework

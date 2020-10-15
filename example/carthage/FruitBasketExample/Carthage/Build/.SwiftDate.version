@@ -1,0 +1,11 @@
+{
+  "commitish" : "6.2.0",
+  "iOS" : [
+    {
+      "hash" : "4327869f7a630c713e4c8e58b2b831947ffc34c3d948393dc00d7cde0729c396",
+      "name" : "SwiftDate",
+      "linking" : "dynamic",
+      "swiftToolchainVersion" : "5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)"
+    }
+  ]
+}
