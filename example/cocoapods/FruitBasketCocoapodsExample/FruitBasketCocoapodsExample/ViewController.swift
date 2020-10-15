@@ -6,14 +6,19 @@
 //
 
 import UIKit
+import FruitBasket
 
 class ViewController: UIViewController {
+    
+    private var basket: Basket!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        basket = Basket(3)
+        basket.add(.apple)
+        basket.add(.banana)
+        basket.add(.orange)
+        basket.add(.apple)
     }
-
-
 }
 
